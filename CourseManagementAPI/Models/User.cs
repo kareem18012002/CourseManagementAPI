@@ -8,5 +8,8 @@
         public string Role { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        // Navigation Properties
+        public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
     }
 }
